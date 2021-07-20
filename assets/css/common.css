@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+  box-sizing: border-box; 
+}
+body {
+  color: #624d42; /* RGB */
+  font-family: "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro" ;
+  font-weight: 500;/* フォントの太さ */
+  font-size: 1.6em;
+  line-height: 2.4rem;
+  text-align: center;
+  background: #f6f8f9;
+}
+h2 {
+  font-size: 2rem;
+}
+h5{
+  font-size: 1.4rem;
+}
+a:hover {
+  opacity: 0.5;
+}
+h5,.point-title,.header-menu_subtitle{
+font-family: "adorn-condensed-sans", sans-serif;
+font-style: normal;
+font-weight: 400;
+  height: 15px;
+}
+
+.font-space{
+  letter-spacing:0.5;
+}
+
+.none{
+  display: none;
+}
+
+
+
+.btn:before,:after {
+  box-sizing: inherit;
+}
+
+.btn,a.btn,button.btn {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height:60px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #fff;
+  border-radius: 0.5rem;
+  height: 60px;
+  width: 270px;
+  margin: 0 auto;
+  
+}
+
+a.btn--red.btn--cubic {
+ filter:drop-shadow(3px 5px 0px #DA8000)
+}
+
+a.btn--red.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #DA8000;
+}
+
+a.btn--radius {
+  border-radius: 60px;
+}
+
+.btn {
+  background-color:#FF9A00; 
+}
+.btn::after{
+  content: "";
+  background-image:url("../images/top/btn_img@3x.png");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  vertical-align: middle;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  margin-right: 20px;
+}
+.btn p{
+position: absolute;
+  left: 30px;
+}
